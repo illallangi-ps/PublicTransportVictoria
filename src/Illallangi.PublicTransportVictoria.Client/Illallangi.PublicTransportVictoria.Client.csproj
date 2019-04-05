@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5C94C2F4-3CFE-4CB7-923B-801E447ACDAD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Illallangi.PublicTransportVictoria</RootNamespace>
+    <AssemblyName>Illallangi.PublicTransportVictoria.Api</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApiHealthException.cs" />
+    <Compile Include="ApiVersionException.cs" />
+    <Compile Include="BaseResponse.cs" />
+    <Compile Include="Departures\GetDepartureByRouteTypeAndStop.cs" />
+    <Compile Include="Departures\GetDepartureByRouteTypeStopAndRoute.cs" />
+    <Compile Include="Directions\GetDirectionByRoute.cs" />
+    <Compile Include="DisruptionModes\GetDisruptionMode.cs" />
+    <Compile Include="Disruptions\GetDisruption.cs" />
+    <Compile Include="Disruptions\GetDisruptionById.cs" />
+    <Compile Include="Disruptions\GetDisruptionByRoute.cs" />
+    <Compile Include="Disruptions\GetDisruptionByRouteAndStop.cs" />
+    <Compile Include="Disruptions\GetDisruptionByStop.cs" />
+    <Compile Include="OAuthHmacSha1Handler.cs" />
+    <Compile Include="Outlets\GetOutlet.cs" />
+    <Compile Include="Outlets\GetOutletByLatitudeAndLongitude.cs" />
+    <Compile Include="Patterns\GetPatternByRunAndRouteType.cs" />
+    <Compile Include="Routes\GetRouteResponse.cs" />
+    <Compile Include="Routes\GetRouteByDirectionResponse.cs" />
+    <Compile Include="Routes\GetRouteByDirectionAndRouteTypeResponse.cs" />
+    <Compile Include="Routes\GetRouteByIdResponse.cs" />
+    <Compile Include="RouteTypes\GetRouteType.cs" />
+    <Compile Include="Runs\GetRunById.cs" />
+    <Compile Include="Runs\GetRunByIdAndRouteType.cs" />
+    <Compile Include="Runs\GetRunByRoute.cs" />
+    <Compile Include="Runs\GetRunByRouteAndRouteType.cs" />
+    <Compile Include="Status.cs" />
+    <Compile Include="Stops\GetStopByIdAndRouteType.cs" />
+    <Compile Include="Stops\GetStopByLatitudeAndLongitude.cs" />
+    <Compile Include="Stops\GetStopByRouteAndRouteType.cs" />
+    <Compile Include="Departures\IDepartureClient.cs" />
+    <Compile Include="Directions\IDirectionClient.cs" />
+    <Compile Include="Disruptions\IDisruptionClient.cs" />
+    <Compile Include="DisruptionModes\IDisruptionModeClient.cs" />
+    <Compile Include="Outlets\IOutletClient.cs" />
+    <Compile Include="Patterns\IPatternClient.cs" />
+    <Compile Include="Routes\IRouteClient.cs" />
+    <Compile Include="RouteTypes\IRouteTypeClient.cs" />
+    <Compile Include="Runs\IRunClient.cs" />
+    <Compile Include="Stops\IStopClient.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Illallangi.PublicTransportVictoria.Model\Illallangi.PublicTransportVictoria.Model.csproj">
+      <Project>{3dcc7f88-5712-46e6-8fba-a4e415cf6167}</Project>
+      <Name>Illallangi.PublicTransportVictoria.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json">
+      <Version>12.0.1</Version>
+    </PackageReference>
+    <PackageReference Include="Refit">
+      <Version>4.6.99</Version>
+    </PackageReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

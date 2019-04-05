@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2046
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Illallangi.PublicTransportVictoria.PowerShell", "Illallangi.PublicTransportVictoria.PowerShell\Illallangi.PublicTransportVictoria.PowerShell.csproj", "{4B13D206-0630-4F0C-9AA8-87A218845ECC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Illallangi.PublicTransportVictoria.Model", "Illallangi.PublicTransportVictoria.Model\Illallangi.PublicTransportVictoria.Model.csproj", "{3DCC7F88-5712-46E6-8FBA-A4E415CF6167}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Illallangi.PublicTransportVictoria.Client", "Illallangi.PublicTransportVictoria.Client\Illallangi.PublicTransportVictoria.Client.csproj", "{5C94C2F4-3CFE-4CB7-923B-801E447ACDAD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Illallangi.PublicTransportVictoria.Ninject", "Illallangi.PublicTransportVictoria.Ninject\Illallangi.PublicTransportVictoria.Ninject.csproj", "{10F955D6-5818-4701-B66E-02D28B528B21}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Illallangi.PublicTransportVictoria.Settings", "Illallangi.PublicTransportVictoria.Settings\Illallangi.PublicTransportVictoria.Settings.csproj", "{C49C5FC7-A692-4534-B230-5E03A6D9DDBC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4B13D206-0630-4F0C-9AA8-87A218845ECC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B13D206-0630-4F0C-9AA8-87A218845ECC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B13D206-0630-4F0C-9AA8-87A218845ECC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B13D206-0630-4F0C-9AA8-87A218845ECC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3DCC7F88-5712-46E6-8FBA-A4E415CF6167}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DCC7F88-5712-46E6-8FBA-A4E415CF6167}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DCC7F88-5712-46E6-8FBA-A4E415CF6167}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DCC7F88-5712-46E6-8FBA-A4E415CF6167}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C94C2F4-3CFE-4CB7-923B-801E447ACDAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C94C2F4-3CFE-4CB7-923B-801E447ACDAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C94C2F4-3CFE-4CB7-923B-801E447ACDAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C94C2F4-3CFE-4CB7-923B-801E447ACDAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10F955D6-5818-4701-B66E-02D28B528B21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10F955D6-5818-4701-B66E-02D28B528B21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10F955D6-5818-4701-B66E-02D28B528B21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10F955D6-5818-4701-B66E-02D28B528B21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C49C5FC7-A692-4534-B230-5E03A6D9DDBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C49C5FC7-A692-4534-B230-5E03A6D9DDBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C49C5FC7-A692-4534-B230-5E03A6D9DDBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C49C5FC7-A692-4534-B230-5E03A6D9DDBC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0139BAA4-A427-4EFB-9422-E0F88CA5BC23}
+	EndGlobalSection
+EndGlobal
